@@ -71,7 +71,7 @@ public class Cl extends Thread {
 
 			}
 			if(Thread.activeCount()==2){ //if all clients have finished their requests
-				avgLatency=sumLatency/requestsNumber*clientsNumber; //calculate the average latency
+				avgLatency=sumLatency/requestsNumber; //calculate the average latency
 				
 				//print average latency
 				System.out.print("Average Latancy: ");
